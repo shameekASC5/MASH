@@ -44,12 +44,12 @@ function getCar () {
 }
 
 function getSalary() {
-    salaryArray = ["$155,000", "$475,000", "$45,000", "$75,000", "$2,000", "$500,000"];
+    let salaryArray = ["$155,000", "$475,000", "$45,000", "$75,000", "$2,000", "$500,000"];
     let randomSalary = random(salaryArray.length);
     return salaryArray[randomSalary];
 }
-if (process.argv[2] && process.argv[3] && process.argv[4]) {
 
+if (process.argv[2] && process.argv[3] && process.argv[4]) {
     console.log(`Hmmmmm....I see that you wish to live in a ${process.argv[2]}, have ${process.argv[3]} children, and drive a ${process.argv[4]}. But I, the all knowing and powerful computer will tell your true fate.`);
 }
 
